@@ -11,7 +11,7 @@
 #       LB2 Consultoria - Leading Business 2 the Next Level!
 # --------------------------------------------------------------
 
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 from passlib.apps import custom_app_context as pwd_context
 

@@ -9,3 +9,4 @@ flask-cloudy==0.13.1
 ansible==2.1.1.0
 passlib
 flask_httpauth
+Flask-Script
