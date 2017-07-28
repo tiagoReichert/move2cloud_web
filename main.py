@@ -12,9 +12,9 @@
 # --------------------------------------------------------------
 
 import os
-from flask.ext.script import Manager, Server
-from flask.ext.script.commands import ShowUrls, Clean
-from flask.ext.migrate import Migrate, MigrateCommand
+from flask_script import Manager, Server
+from flask_script.commands import ShowUrls, Clean
+from flask_migrate import Migrate, MigrateCommand
 from app import create_app
 from app.models import db
 from app.models import Usuario, Status
