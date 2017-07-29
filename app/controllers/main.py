@@ -25,6 +25,7 @@ def index():
 
 
 @main.route('/create_client', methods=['GET', 'POST'])
+@authentication.admin.login_required
 def create_client():
     if request.method == 'GET':
         return render_template('CreateClient.html')
@@ -36,6 +37,7 @@ def create_client():
 
 
 @main.route('/create_server', methods=['GET', 'POST'])
+@authentication.admin.login_required
 def create_server():
     if request.method == 'GET':
         return render_template('CreateServer.html')
